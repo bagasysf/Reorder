@@ -8,6 +8,7 @@
 
 
     <!-- Custom CSS   -->
+    <link href="{{ asset('styles/css/reorder.css') }}" rel="stylesheet">
     <link href="{{ asset('styles/css/reorder-xm.css') }}" rel="stylesheet">
     <link href="{{ asset('styles/css/reorder-sm.css') }}" rel="stylesheet">
     <link href="{{ asset('styles/css/reorder-md.css') }}" rel="stylesheet">
@@ -22,29 +23,27 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar-brand col-2 col-s-2">
+    <div class="navbar shadow">
+        <div class="col-xm-4 col-sm-3 col-md-2 col-lg-2 navbar-brand shadow">
             <img src="{{ asset('styles/img/ReOrder.png') }}" alt="">
         </div>
-        <div class="navbar-header col-9 col-s-8"></div>
-        <div class="navbar-icon col-2 col-s-2">
-            <div class="notif-icon">
-                <a href="">
-                    <img src="{{ asset('styles/img/icon/48px/bell.svg') }}" alt="">
-                </a>
-            </div>
-            <div class="user-icon">
-                <a href="">
-                    <img src="{{ asset('styles/img/icon/48px/user.svg') }}" alt="">
-                </a>
-            </div>
+        <div class="navbar-middle col-xm-4 col-sm-6 col-md-8 col-lg-8"></div>
+        <div class="navbar-icon col-xm-4 col-sm-3 col-md-2 col-lg-2">
+            <a href="">
+                <img src="{{ asset('styles/img/icon/48px/bell.svg') }}" alt="">
+            </a>
+            <a href="">
+                <img src="{{ asset('styles/img/icon/48px/user.svg') }}" alt="">
+            </a>
         </div>
     </div>
+    </div>
+    </div>
     <div class="content">
-        <div class="sidebar col-2 col-s-2">
+        <div class="sidebar shadow col-lg-2">
             <ul>
                 <li class="sidebar-link">
-                    <a href="">
+                    <a href="/">
                         <img src="{{ asset('styles/img/icon/48px/home.svg') }}" alt=""><span>Dashboard</span>
                     </a>
                 </li>
@@ -60,7 +59,7 @@
                 </li>
             </ul>
         </div>
-        <div class="main-content col-11 col-s-10">
+        <div class="main-content col-lg-10">
             @yield('content')
         </div>
     </div>

@@ -6,45 +6,41 @@
         font-family: "Roboto", "Sans";
     }
 
-    .shadow {
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    }
-
     /* For desktop: */
-    .col-1 {
+    .col-lg-1 {
         width: 8.33%;
     }
-    .col-2 {
+    .col-lg-2 {
         width: 16.66%;
     }
-    .col-3 {
+    .col-lg-3 {
         width: 25%;
     }
-    .col-4 {
+    .col-lg-4 {
         width: 33.33%;
     }
-    .col-5 {
+    .col-lg-5 {
         width: 41.66%;
     }
-    .col-6 {
+    .col-lg-6 {
         width: 50%;
     }
-    .col-7 {
+    .col-lg-7 {
         width: 58.33%;
     }
-    .col-8 {
+    .col-lg-8 {
         width: 66.66%;
     }
-    .col-9 {
+    .col-lg-9 {
         width: 75%;
     }
-    .col-10 {
+    .col-lg-10 {
         width: 83.33%;
     }
-    .col-11 {
+    .col-lg-11 {
         width: 91.66%;
     }
-    .col-12 {
+    .col-lg-12 {
         width: 100%;
     }
 
@@ -53,16 +49,13 @@
         height: 6rem;
         display: flex;
         flex-direction: row;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     }
 
     .navbar-brand {
         display: flex;
-        height: 6rem;
         justify-content: center;
         align-items: center;
-        /* flex-grow: 1; */
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        height: auto;
     }
 
     .navbar-brand img {
@@ -70,36 +63,33 @@
         width: auto;
     }
 
-    .navbar-header {
+    .navbar-middle {
         display: flex;
-        height: 6rem;
-        /* flex-grow: 8; */
+        /* justify-content: center; */
+        height: auto;
     }
 
     .navbar-icon {
         display: flex;
-        height: 6rem;
-        /* flex-grow: 0.5; */
+        justify-content: space-evenly;
         justify-content: center;
         align-items: center;
     }
 
-    .user-icon,
-    .notif-icon {
+    .navbar-icon a {
         display: flex;
-        margin: 0.5rem;
         justify-content: center;
         align-items: center;
         width: 3rem;
         height: 3rem;
+        margin: 0.5rem;
         border-radius: 50%;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     }
 
-    .user-icon a img,
-    .notif-icon a img {
-        width: 1.5rem;
-        height: 1.5rem;
+    .navbar-icon a img {
+        width: 50%;
+        height: auto;
     }
     /* End Navbar */
 
@@ -115,7 +105,6 @@
     .sidebar {
         display: flex;
         justify-content: center;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     }
 
     .sidebar ul {
@@ -188,7 +177,8 @@
         border: none;
     }
 
-    .table .box-table .tr-body td a img, .table .box-table .tr-body td button img {
+    .table .box-table .tr-body td a img,
+    .table .box-table .tr-body td button img {
         width: 1rem;
         height: 1rem;
         padding: 0 0.5rem 0 0;
@@ -222,8 +212,7 @@
     .button-control {
         display: flex;
         margin-top: 1.5rem;
-        width: 100%
-        background-color: teal;
+        width: 100%;
     }
 
     .button {
