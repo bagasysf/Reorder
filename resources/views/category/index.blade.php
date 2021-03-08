@@ -28,12 +28,16 @@
                 <td>{{$category->name}}</td>
                 <td>{{$category->description}}</td>
                 <td>
-                    <a href="" class="edit-icon">
-                        <img src="{{ asset('styles/img/icon/48px/edit-2.svg') }}" alt="">
-                    </a>
-                    <a href="" class="edit-icon">
-                        <img src="{{ asset('styles/img/icon/48px/trash-2.svg') }}" alt="">
-                    </a>
+                    <form action="/category/{{$category->id}}" method="POST">
+                        @csrf
+                        @method("DELETE")
+                        <a href="" class="edit-icon">
+                            <img src="{{ asset('styles/img/icon/48px/edit-2.svg') }}" alt="">
+                        </a>
+                        <button type="submit" class="edit-icon">
+                            <img src="{{ asset('styles/img/icon/48px/trash-2.svg') }}" alt="">
+                        </button>
+                    </form>
                 </td>
             </tr>
             @endforeach
@@ -44,12 +48,16 @@
     <div class="header-add-new">
         <h3>Add New Category</h3>
     </div>
-    <form>
+    <form action=" /category" method="POST">
+        @csrf
         <div class="input">
-            <input type="text" class="shadow" placeholder="Type name here ..">
+            <input type="text" name="name" class="shadow" placeholder="Type name here ..">
         </div>
         <div class="input">
-            <input type="text" class="shadow" placeholder="Type description here ..">
+            <input type="text" name="description" class="shadow" placeholder="Type description here ..">
+        </div>
+        <div class="button-control">
+            <button class="button shadow">Submit</button>
         </div>
     </form>
 </div>
