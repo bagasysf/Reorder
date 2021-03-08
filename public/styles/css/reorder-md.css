@@ -1,0 +1,96 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', 'Sans';
+    }
+
+    .shadow {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    /* Start Navbar */
+    .navbar {
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-brand {
+        display: flex;
+        height: 4rem;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-brand img {
+        height: 1rem;
+        width: auto;
+    }
+
+    .navbar-header {
+        display: flex;
+        height: 5rem;
+        flex-grow: 8;
+    }
+
+    .navbar-icon {
+        display: none;
+    }
+
+    .user-icon, .notif-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .user-icon a img, .notif-icon a img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    /* End Navbar */
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+    /* End Content */
+
+    /* Start Sidebar */
+    .sidebar {
+        display: none;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    /* End Sidebar */
+
+    /* Start Main Content */
+    .main-content {
+        display: flex;
+        flex-grow: 10;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    /* End Main Content */
+}

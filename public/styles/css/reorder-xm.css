@@ -1,0 +1,84 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', 'Sans';
+    }
+
+    .shadow {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .navbar {
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-brand {
+        display: flex;
+        height: 3rem;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-brand img {
+        height: 1rem;
+        width: auto;
+    }
+
+    .navbar-header {
+        display: flex;
+        height: 5rem;
+        flex-grow: 8;
+    }
+
+    .navbar-icon {
+        display: none;
+    }
+
+    .user-icon, .notif-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .user-icon a img, .notif-icon a img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+    /* End Content */
+
+    /* Start Sidebar */
+    .sidebar {
+        display: none;
+    }
+    /* End Sidebar */
+
+    /* Start Main Content */
+    .main-content {
+        display: flex;
+        flex-grow: 10;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    /* End Main Content */
+}
