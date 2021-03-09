@@ -8,28 +8,28 @@
 
     /* For desktop: */
     .col-lg-1 {
-        width: 8.33%;
+        width: 8.33% !important;
     }
     .col-lg-2 {
-        width: 16.66%;
+        width: 16.66% !important;
     }
     .col-lg-3 {
-        width: 25%;
+        width: 25% !important;
     }
     .col-lg-4 {
-        width: 33.33%;
+        width: 33.33% !important;
     }
     .col-lg-5 {
-        width: 41.66%;
+        width: 41.66% !important;
     }
     .col-lg-6 {
-        width: 50%;
+        width: 50% !important;
     }
     .col-lg-7 {
-        width: 58.33%;
+        width: 58.33% !important;
     }
     .col-lg-8 {
-        width: 66.66%;
+        width: 66.66% !important;
     }
     .col-lg-9 {
         width: 75%;
@@ -55,12 +55,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: auto;
     }
 
     .navbar-brand img {
-        height: 2rem;
-        width: auto;
+        height: auto;
+        width: 6rem;
     }
 
     .navbar-middle {
@@ -105,6 +104,7 @@
     .sidebar {
         display: flex;
         justify-content: center;
+        width: auto;
     }
 
     .sidebar ul {
@@ -140,7 +140,7 @@
     .table {
         display: flex;
         flex-direction: column;
-        padding: 3rem;
+        width: auto;
     }
 
     .table .header {
@@ -149,35 +149,33 @@
         width: fit-content;
     }
 
-    .table .table-overflow {
-        overflow: auto;
-        margin-top: 2rem;
-        padding: 1rem;
-    }
-
-    .table .table-overflow table {
+    .table table {
+        display: inline-block;
         justify-content: start;
-        display: flex
-    }
-
-    .table .table-overflow table tr th, .table .table-overflow table tr td {
-        text-align: start;
-        /* padding: 0 1rem 0 1rem; */
         padding: 1rem;
+        width: 100%;
     }
 
-    .table .table-overflow table tr td form a {
+    .table table tr th,
+    .table table tr td {
+        text-align: start;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .table table tr td form a {
         text-decoration: none;
     }
 
-    .table .table-overflow table tr td button, .table .table-overflow table tr td button:focus {
+    .table table tr td button,
+    .table table tr td button:focus {
         text-decoration: none;
         background-color: transparent;
         border: none;
     }
 
-    .table .table-overflow table tr td a img,
-    .table .table-overflow table tr td button img {
+    .table table tr td a img,
+    .table table tr td button img {
         width: 1rem;
         height: 1rem;
         padding: 0 0.5rem 0 0;
@@ -188,7 +186,8 @@
     .form {
         display: flex;
         flex-direction: column;
-        padding: 3rem 3rem 3rem 0;
+        width: 100;
+        padding-top: 2rem;
     }
 
     .form .header {
@@ -201,14 +200,19 @@
         margin-top: 2rem;
     }
 
-    .form form .input input, .form form .input input:focus {
+    .form form .input input,
+    .form form .input input:focus {
         outline: none;
         border: none;
         height: 3.5rem;
-        width: 100%;
         padding-left: 1rem;
+        width: 90%;
         background-color: transparent;
         font-size: 1rem;
+    }
+
+    .form form .input input::placeholder {
+        font-size: 0.9rem;
     }
 
     .form form .button-control {
@@ -220,7 +224,7 @@
     .form form .button-control button {
         background-color: white;
         border: none;
-        padding: 0.8rem;
+        padding: 1.1rem;
         background-color: black;
         color: white;
         font-size: 1rem;

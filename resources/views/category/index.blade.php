@@ -3,11 +3,11 @@
 @section('title', $title)
 
 @section('main-content')
-<div class="table col-xm-12 col-sm-12 col-md-12 col-lg-8">
+<div class="table col-xm-12 col-sm-12 col-md-12 col-lg-7">
     <div class="header">
         <h3>Category</h3>
     </div>
-    <div class="table-overflow shadow">
+    <div class="table-overflow shadow" style="overflow-x: auto;">
         <table>
             <tr>
                 <th>No</th>
@@ -31,10 +31,10 @@
                     <form action="/category/{{$category->id}}" method="POST">
                         @csrf
                         @method("DELETE")
-                        <a href="" class="edit-icon">
+                        <a href="">
                             <img src="{{ asset('styles/img/icon/48px/edit-2.svg') }}" alt="">
                         </a>
-                        <button type="submit" class="edit-icon">
+                        <button type="submit">
                             <img src="{{ asset('styles/img/icon/48px/trash-2.svg') }}" alt="">
                         </button>
                     </form>
@@ -44,7 +44,7 @@
         </table>
     </div>
 </div>
-<div class="form pr-3 pb-3 col-xm-12 col-sm-12 col-md-12 col-lg-4">
+<div class="form col-xm-12 col-sm-12 col-md-12 col-lg-3">
     <div class="header">
         <h3>Add New Category</h3>
     </div>

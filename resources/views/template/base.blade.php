@@ -8,11 +8,11 @@
 
 
     <!-- Custom CSS   -->
-    <link href="{{ asset('styles/css/reorder.css') }}" rel="stylesheet">
-    <link href="{{ asset('styles/css/reorder-xm.css') }}" rel="stylesheet">
-    <link href="{{ asset('styles/css/reorder-sm.css') }}" rel="stylesheet">
-    <link href="{{ asset('styles/css/reorder-md.css') }}" rel="stylesheet">
-    <link href="{{ asset('styles/css/reorder-lg.css') }}" rel="stylesheet">
+    <link href="{{ asset('/styles/css/reorder.css') }}" rel="stylesheet">
+    <link href="{{ asset('/styles/css/reorder-xm.css') }}" rel="stylesheet">
+    <link href="{{ asset('/styles/css/reorder-sm.css') }}" rel="stylesheet">
+    <link href="{{ asset('/styles/css/reorder-md.css') }}" rel="stylesheet">
+    <link href="{{ asset('/styles/css/reorder-lg.css') }}" rel="stylesheet">
 
 
     <!-- Google Fonts -->
@@ -24,10 +24,11 @@
 
 <body>
     <div class="navbar shadow">
-        <div class="col-xm-4 col-sm-3 col-md-2 col-lg-2 navbar-brand shadow">
+        <div class="navbar-brand col-xm-4 col-sm-3 col-md-2 col-lg-2">
             <img src="{{ asset('styles/img/ReOrder.png') }}" alt="">
         </div>
-        <div class="navbar-middle col-xm-8 col-sm-9 col-md-10 col-lg-8"></div>
+        <div class="navbar-middle col-xm-8 col-sm-9 col-md-10 col-lg-8">
+        </div>
         <div class="navbar-icon col-lg-2">
             <a href="">
                 <img src="{{ asset('styles/img/icon/48px/bell.svg') }}" alt="">
@@ -40,17 +41,17 @@
     <div class="content">
         <div class="sidebar shadow col-lg-2">
             <ul>
-                <li class="sidebar-link">
+                <li>
                     <a href="/">
                         <img src="{{ asset('styles/img/icon/48px/home.svg') }}" alt=""><span>Dashboard</span>
                     </a>
                 </li>
-                <li class="sidebar-link">
+                <li>
                     <a href="/category">
                         <img src="{{ asset('styles/img/icon/48px/folder.svg') }}" alt=""><span>Category</span>
                     </a>
                 </li>
-                <li class="sidebar-link">
+                <li>
                     <a href="">
                         <img src="{{ asset('styles/img/icon/48px/file.svg') }}" alt=""><span>Product</span>
                     </a>

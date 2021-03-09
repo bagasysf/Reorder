@@ -8,47 +8,46 @@
 
     /* For desktop: */
     .col-md-1 {
-        width: 8.33%;
+        width: 8.33% !important;
     }
     .col-md-2 {
-        width: 16.66%;
+        width: 16.66% !important;
     }
     .col-md-3 {
-        width: 25%;
+        width: 25% !important;
     }
     .col-md-4 {
-        width: 33.33%;
+        width: 33.33% !important;
     }
     .col-md-5 {
-        width: 41.66%;
+        width: 41.66% !important;
     }
     .col-md-6 {
-        width: 50%;
+        width: 50% !important;
     }
     .col-md-7 {
-        width: 58.33%;
+        width: 58.33% !important;
     }
     .col-md-8 {
-        width: 66.66%;
+        width: 66.66% !important;
     }
     .col-md-9 {
-        width: 75%;
+        width: 75% !important;
     }
     .col-md-10 {
-        width: 83.33%;
+        width: 83.33% !important;
     }
     .col-md-11 {
-        width: 91.66%;
+        width: 91.66% !important;
     }
     .col-md-12 {
-        width: 100%;
+        width: 100% !important;
     }
 
     /* Start Navbar */
     .navbar {
         height: 4rem;
         display: flex;
-        /* background-color: blueviolet; */
         flex-direction: row;
     }
 
@@ -99,8 +98,8 @@
     .table {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        padding: 3rem;
+        width: auto;
+        padding: 2rem;
     }
 
     .table .header {
@@ -109,34 +108,41 @@
         width: fit-content;
     }
 
+    .table .header h3 {
+        font-size: 1.1rem;
+    }
+
     .table .table-overflow {
-        overflow: auto;
+        overflow-x: auto;
         margin-top: 2rem;
-        padding: 1rem;
     }
 
-    .table .table-overflow table {
-        justify-content: start;
-        display: flex
+    .table table {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
-    .table .table-overflow table tr th, .table .table-overflow table tr td {
+    .table table tr th,
+    .table table tr td {
         text-align: start;
         padding: 1rem;
+        font-size: 1rem;
     }
 
-    .table .table-overflow table tr td form a {
+    .table table tr td form a {
         text-decoration: none;
     }
 
-    .table .table-overflow table tr td button, .table .table-overflow table tr td button:focus {
+    .table table tr td button,
+    .table table tr td button:focus {
         text-decoration: none;
         background-color: transparent;
         border: none;
     }
 
-    .table .table-overflow table tr td a img,
-    .table .table-overflow table tr td button img {
+    .table table tr td a img,
+    .table table tr td button img {
         width: 1rem;
         height: 1rem;
         padding: 0 0.5rem 0 0;
@@ -147,7 +153,8 @@
     .form {
         display: flex;
         flex-direction: column;
-        padding: 0 3rem 0 3rem;
+        width: auto;
+        padding: 0 2rem 2rem 2rem;
     }
 
     .form .header {
@@ -156,16 +163,21 @@
         width: fit-content;
     }
 
+    .form .header h3 {
+        font-size: 1.1rem;
+    }
+
     .form form .input {
         margin-top: 2rem;
     }
 
-    .form form .input input, .form form .input input:focus {
+    .form form .input input,
+    .form form .input input:focus {
         outline: none;
         border: none;
         height: 3.5rem;
-        width: 100%;
         padding-left: 1rem;
+        width: 95%;
         background-color: transparent;
         font-size: 1rem;
     }
@@ -182,7 +194,7 @@
         padding: 0.8rem;
         background-color: black;
         color: white;
-        font-size: 1rem;
+        font-size: 1.1rem;
         width: 8rem;
         font-weight: 700;
     }
