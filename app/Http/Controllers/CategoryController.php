@@ -38,7 +38,7 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
         Category::create([
             'name' => request('name'),
@@ -54,7 +54,7 @@ class CategoryController extends Controller
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show()
     {
         //
     }
@@ -65,7 +65,7 @@ class CategoryController extends Controller
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category, $id)
+    public function edit($id)
     {
         $title = 'Edit Category';
         $category = Category::all();
@@ -76,7 +76,7 @@ class CategoryController extends Controller
             'editcategory' => $editcategory
         ]);
 
-        return redirect('category.edit');
+        return redirect('/category.edit');
     }
 
     /**
@@ -86,7 +86,7 @@ class CategoryController extends Controller
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Category $category, $id)
+    public function update($id)
     {
         $category = Category::where('id', $id)->first();
         $category->update([

@@ -3,7 +3,7 @@
 @section('title', $title)
 
 @section('main-content')
-<div class="table col-xm-12 col-sm-12 col-md-12 col-lg-7">
+<div class="table col-xm-12 col-sm-12 col-md-12 col-lg-8">
     <div class="header">
         <h3>Category</h3>
     </div>
@@ -31,7 +31,7 @@
                     <form action="/category/{{$category->id}}" method="POST">
                         @csrf
                         @method("DELETE")
-                        <a href="">
+                        <a href="{{ url('category', $category->id) }}/edit">
                             <img src="{{ asset('styles/img/icon/48px/edit-2.svg') }}" alt="">
                         </a>
                         <button type="submit">
@@ -44,7 +44,7 @@
         </table>
     </div>
 </div>
-<div class="form col-xm-12 col-sm-12 col-md-12 col-lg-3">
+<div class="form col-xm-12 col-sm-12 col-md-12 col-lg-4">
     <div class="header">
         <h3>Add New Category</h3>
     </div>
@@ -57,7 +57,7 @@
             <input type="text" name="description" placeholder="Type description here ..">
         </div>
         <div class="button-control">
-            <button class="button shadow">Submit</button>
+            <button type="submit" class="button shadow">Submit</button>
         </div>
     </form>
 </div>
