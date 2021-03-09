@@ -27,8 +27,8 @@
         <div class="col-xm-4 col-sm-3 col-md-2 col-lg-2 navbar-brand shadow">
             <img src="{{ asset('styles/img/ReOrder.png') }}" alt="">
         </div>
-        <div class="navbar-middle col-xm-4 col-sm-6 col-md-8 col-lg-8"></div>
-        <div class="navbar-icon col-xm-4 col-sm-3 col-md-2 col-lg-2">
+        <div class="navbar-middle col-xm-8 col-sm-9 col-md-10 col-lg-8"></div>
+        <div class="navbar-icon col-lg-2">
             <a href="">
                 <img src="{{ asset('styles/img/icon/48px/bell.svg') }}" alt="">
             </a>
@@ -36,8 +36,6 @@
                 <img src="{{ asset('styles/img/icon/48px/user.svg') }}" alt="">
             </a>
         </div>
-    </div>
-    </div>
     </div>
     <div class="content">
         <div class="sidebar shadow col-lg-2">
@@ -59,8 +57,8 @@
                 </li>
             </ul>
         </div>
-        <div class="main-content col-lg-10">
-            @yield('content')
+        <div class="main-content col-xm-12 col-sm-12 col-md-12 col-lg-10">
+            @yield('main-content')
         </div>
     </div>
 </body>

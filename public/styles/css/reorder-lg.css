@@ -115,11 +115,11 @@
         list-style: none;
         line-height: 2.5rem;
         font-weight: 700;
-        color: black;
     }
 
     .sidebar ul li a {
         text-decoration: none;
+        color: black;
     }
 
     .sidebar ul li a img {
@@ -133,97 +133,99 @@
     .main-content {
         display: flex;
         flex-direction: row;
-        box-shadow: none;
     }
     /* End Main Content */
 
-    /* Start Table Category */
+    /* Start Table */
     .table {
         display: flex;
         flex-direction: column;
-        padding: 2.5rem;
+        padding: 3rem;
     }
 
-    .table .header-table {
+    .table .header {
         padding: 1rem;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         width: fit-content;
     }
 
-    .table-overflow {
-        display: flex;
+    .table .table-overflow {
         overflow: auto;
-        margin-top: 1.5rem;
-        padding: 1.5rem;
-        line-height: 2.5rem;
+        margin-top: 2rem;
+        padding: 1rem;
     }
 
-    .table .box-table tr th {
+    .table .table-overflow table {
+        justify-content: start;
+        display: flex
+    }
+
+    .table .table-overflow table tr th, .table .table-overflow table tr td {
         text-align: start;
-        padding: 0 1rem 0 1rem;
+        /* padding: 0 1rem 0 1rem; */
+        padding: 1rem;
     }
 
-    .table .box-table tr td {
-        padding: 0 1rem 0 1rem;
-    }
-
-    .table .box-table .tr-body td a {
+    .table .table-overflow table tr td form a {
         text-decoration: none;
     }
 
-    .table .box-table .tr-body td button {
+    .table .table-overflow table tr td button, .table .table-overflow table tr td button:focus {
         text-decoration: none;
         background-color: transparent;
         border: none;
     }
 
-    .table .box-table .tr-body td a img,
-    .table .box-table .tr-body td button img {
+    .table .table-overflow table tr td a img,
+    .table .table-overflow table tr td button img {
         width: 1rem;
         height: 1rem;
         padding: 0 0.5rem 0 0;
     }
+    /* End Table */
 
-    .add-new {
+    /* Start Form */
+    .form {
         display: flex;
         flex-direction: column;
-        flex-grow: 4;
-        padding: 2.5rem 3rem 2.5rem 0;
+        padding: 3rem 3rem 3rem 0;
     }
 
-    .add-new .header-add-new {
+    .form .header {
         padding: 1rem;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         width: fit-content;
     }
 
-    .add-new .input {
-        margin-top: 1.5rem;
+    .form form .input {
+        margin-top: 2rem;
     }
 
-    .add-new form .input input {
-        border-style: none;
-        padding-left: 1.5rem;
+    .form form .input input, .form form .input input:focus {
+        outline: none;
+        border: none;
         height: 3.5rem;
         width: 100%;
+        padding-left: 1rem;
+        background-color: transparent;
         font-size: 1rem;
     }
 
-    .button-control {
+    .form form .button-control {
         display: flex;
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         width: 100%;
     }
 
-    .button {
+    .form form .button-control button {
         background-color: white;
         border: none;
         padding: 0.8rem;
-        background-color: gray;
+        background-color: black;
         color: white;
         font-size: 1rem;
         width: 8rem;
         font-weight: 700;
     }
-    /* End Table Category */
+    /* End From */
 }

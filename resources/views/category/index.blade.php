@@ -2,14 +2,14 @@
 
 @section('title', $title)
 
-@section('content')
-<div class="table col-8 col-s-12">
-    <div class="header-table">
+@section('main-content')
+<div class="table col-xm-12 col-sm-12 col-md-12 col-lg-8">
+    <div class="header">
         <h3>Category</h3>
     </div>
     <div class="table-overflow shadow">
-        <table class="box-table">
-            <tr class="tr-head">
+        <table>
+            <tr>
                 <th>No</th>
                 <th>Name</th>
                 <th>Description</th>
@@ -23,7 +23,7 @@
             @php
             $num++;
             @endphp
-            <tr class="tr-body">
+            <tr>
                 <td>{{$num}}</td>
                 <td>{{$category->name}}</td>
                 <td>{{$category->description}}</td>
@@ -44,17 +44,17 @@
         </table>
     </div>
 </div>
-<div class="add-new col-4 col-s-12">
-    <div class="header-add-new">
+<div class="form pr-3 pb-3 col-xm-12 col-sm-12 col-md-12 col-lg-4">
+    <div class="header">
         <h3>Add New Category</h3>
     </div>
-    <form action=" /category" method="POST">
+    <form action="/category" method="POST">
         @csrf
-        <div class="input">
-            <input type="text" name="name" class="shadow" placeholder="Type name here ..">
+        <div class="input shadow">
+            <input type="text" name="name" placeholder="Type name here ..">
         </div>
-        <div class="input">
-            <input type="text" name="description" class="shadow" placeholder="Type description here ..">
+        <div class="input shadow">
+            <input type="text" name="description" placeholder="Type description here ..">
         </div>
         <div class="button-control">
             <button class="button shadow">Submit</button>

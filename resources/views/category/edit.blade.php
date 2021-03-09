@@ -2,7 +2,7 @@
 
 @section('title', $title)
 
-@section('content')
+@section('main-content')
 <div class="row">
     <div class="col-7">
         <div class="row pt-5 ps-5">

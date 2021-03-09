@@ -48,6 +48,7 @@
     .navbar {
         height: 4rem;
         display: flex;
+        /* background-color: blueviolet; */
         flex-direction: row;
     }
 
@@ -84,15 +85,106 @@
     /* Start Sidebar */
     .sidebar {
         display: none;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     }
     /* End Sidebar */
 
     /* Start Main Content */
     .main-content {
         display: flex;
-        flex-grow: 10;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        flex-direction: column;
     }
     /* End Main Content */
+
+    /* Start Table */
+    .table {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 3rem;
+    }
+
+    .table .header {
+        padding: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        width: fit-content;
+    }
+
+    .table .table-overflow {
+        overflow: auto;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .table .table-overflow table {
+        justify-content: start;
+        display: flex
+    }
+
+    .table .table-overflow table tr th, .table .table-overflow table tr td {
+        text-align: start;
+        padding: 1rem;
+    }
+
+    .table .table-overflow table tr td form a {
+        text-decoration: none;
+    }
+
+    .table .table-overflow table tr td button, .table .table-overflow table tr td button:focus {
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+    }
+
+    .table .table-overflow table tr td a img,
+    .table .table-overflow table tr td button img {
+        width: 1rem;
+        height: 1rem;
+        padding: 0 0.5rem 0 0;
+    }
+    /* End Table */
+
+    /* Start Form */
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding: 0 3rem 0 3rem;
+    }
+
+    .form .header {
+        padding: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        width: fit-content;
+    }
+
+    .form form .input {
+        margin-top: 2rem;
+    }
+
+    .form form .input input, .form form .input input:focus {
+        outline: none;
+        border: none;
+        height: 3.5rem;
+        width: 100%;
+        padding-left: 1rem;
+        background-color: transparent;
+        font-size: 1rem;
+    }
+
+    .form form .button-control {
+        display: flex;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .form form .button-control button {
+        background-color: white;
+        border: none;
+        padding: 0.8rem;
+        background-color: black;
+        color: white;
+        font-size: 1rem;
+        width: 8rem;
+        font-weight: 700;
+    }
+    /* End From */
 }
