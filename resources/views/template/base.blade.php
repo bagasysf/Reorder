@@ -13,6 +13,7 @@
     <link href="{{ asset('/styles/css/reorder-sm.css') }}" rel="stylesheet">
     <link href="{{ asset('/styles/css/reorder-md.css') }}" rel="stylesheet">
     <link href="{{ asset('/styles/css/reorder-lg.css') }}" rel="stylesheet">
+    <link href="{{ asset('/styles/css/reorder-xl.css') }}" rel="stylesheet">
 
 
     <!-- Google Fonts -->
@@ -52,7 +53,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/product">
                         <img src="{{ asset('styles/img/icon/48px/file.svg') }}" alt=""><span>Product</span>
                     </a>
                 </li>

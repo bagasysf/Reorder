@@ -1,52 +1,52 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
     * {
         padding: 0;
         margin: 0;
         font-family: "Roboto", "Sans";
     }
 
-    /* For mobile phones: */
-
-    .col-xm-1 {
+    /* For desktop: */
+    .col-xl-1 {
         width: 8.33% !important;
     }
-    .col-xm-2 {
+    .col-xl-2 {
         width: 16.66% !important;
     }
-    .col-xm-3 {
+    .col-xl-3 {
         width: 25% !important;
     }
-    .col-xm-4 {
+    .col-xl-4 {
         width: 33.33% !important;
     }
-    .col-xm-5 {
+    .col-xl-5 {
         width: 41.66% !important;
     }
-    .col-xm-6 {
+    .col-xl-6 {
         width: 50% !important;
     }
-    .col-xm-7 {
+    .col-xl-7 {
         width: 58.33% !important;
     }
-    .col-xm-8 {
+    .col-xl-8 {
         width: 66.66% !important;
     }
-    .col-xm-9 {
-        width: 75% !important;
+    .col-xl-9 {
+        width: 75%;
     }
-    .col-xm-10 {
-        width: 83.33% !important;
+    .col-xl-10 {
+        width: 83.33%;
     }
-    .col-xm-11 {
-        width: 91.66% !important;
+    .col-xl-11 {
+        width: 91.66%;
     }
-    .col-xm-12 {
-        width: 100% !important;
+    .col-xl-12 {
+        width: 100%;
     }
 
+    /* Start Navbar */
     .navbar {
-        height: 3rem;
+        height: 6rem;
         display: flex;
         flex-direction: row;
     }
@@ -55,12 +55,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: auto;
     }
 
     .navbar-brand img {
-        height: 1rem;
-        width: auto;
+        height: auto;
+        width: 6rem;
     }
 
     .navbar-middle {
@@ -70,10 +69,30 @@
     }
 
     .navbar-icon {
-        display: none;
+        display: flex;
+        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-icon a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        margin: 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-icon a img {
+        width: 50%;
+        height: auto;
     }
     /* End Navbar */
 
+    /* Start Content */
     .content {
         display: flex;
         flex-direction: row;
@@ -83,17 +102,39 @@
 
     /* Start Sidebar */
     .sidebar {
-        display: none;
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+
+    .sidebar ul {
+        margin-top: 2rem;
+    }
+
+    .sidebar ul li {
+        list-style: none;
+        line-height: 2.5rem;
+        font-weight: 700;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .sidebar ul li a img {
+        width: 1rem;
+        height: auto;
+        padding-right: 1rem;
     }
     /* End Sidebar */
 
     /* Start Main Content */
     .main-content {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         box-sizing: border-box;
         width: 100%;
-        padding: 1rem;
     }
     /* End Main Content */
 
@@ -102,8 +143,6 @@
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        width: auto;
-        margin-top: 1rem;
     }
 
     .table .header {
@@ -113,7 +152,7 @@
     }
 
     .table .header h3 {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .table .table-overflow {
@@ -131,7 +170,7 @@
     .table table tr td {
         text-align: start;
         padding: 1rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .table table tr td form a {
@@ -148,8 +187,8 @@
 
     .table table tr td a img,
     .table table tr td button img {
-        width: 0.8rem;
-        height: 0.8rem;
+        width: 1rem;
+        height: 1rem;
         padding: 0 0.5rem 0 0;
     }
     /* End Table */
@@ -159,8 +198,7 @@
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        width: auto;
-        padding: 2rem 0 2rem 0;
+        padding: 1rem 0 1rem 1rem;
     }
 
     .form .header {
@@ -170,27 +208,11 @@
     }
 
     .form .header h3 {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .form form .input {
         margin-top: 1rem;
-    }
-
-    /* .form form .select {
-        padding-right: 1rem;
-    } */
-
-    .form form .input select {
-        height: 3.5rem;
-        width: 100%;
-        padding-left: 0.8rem;
-        border: none;
-        outline: none;
-    }
-
-    .form form .input select span {
-        color: gray !important;
     }
 
     .form form .input input,
@@ -201,7 +223,7 @@
         height: 3.5rem;
         padding-left: 1rem;
         width: 100%;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .form form .button-control {

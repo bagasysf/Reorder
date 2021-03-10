@@ -91,6 +91,9 @@
     .main-content {
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 2rem;
     }
     /* End Main Content */
 
@@ -98,7 +101,9 @@
     .table {
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
         width: auto;
+        margin-top: 1rem;
     }
 
     .table .header {
@@ -113,7 +118,7 @@
 
     .table .table-overflow {
         overflow-x: auto;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .table table {
@@ -126,6 +131,7 @@
     .table table tr td {
         text-align: start;
         padding: 1rem;
+        font-size: 0.8rem;
     }
 
     .table table tr td form a {
@@ -137,6 +143,7 @@
         text-decoration: none;
         background-color: transparent;
         border: none;
+        outline: none;
     }
 
     .table table tr td a img,
@@ -151,33 +158,39 @@
     .form {
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
         width: auto;
+        padding: 2rem 0 2rem 0;
     }
 
     .form .header {
-        padding: 0.9rem;
+        padding: 1rem;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         width: fit-content;
     }
 
+    .form .header h3 {
+        font-size: 0.9rem;
+    }
+
     .form form .input {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .form form .input input,
     .form form .input input:focus {
         outline: none;
         border: none;
+        box-sizing: border-box;
         height: 3.5rem;
-        width: 90%;
         padding-left: 1rem;
-        background-color: transparent;
+        width: 100%;
         font-size: 0.8rem;
     }
 
     .form form .button-control {
         display: flex;
-        margin-top: 2rem;
+        margin-top: 1rem;
         width: 100%;
     }
 

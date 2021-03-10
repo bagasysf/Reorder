@@ -3,7 +3,7 @@
 @section('title', $title)
 
 @section('main-content')
-<div class="table col-xm-12 col-sm-12 col-md-12 col-lg-8">
+<div class="table col-xm-12 col-sm-12 col-md-12 col-lg-8 col-xl-7">
     <div class="header">
         <h3>Category</h3>
     </div>
@@ -44,7 +44,7 @@
         </table>
     </div>
 </div>
-<div class="form col-xm-12 col-sm-12 col-md-12 col-lg-4">
+<div class="form col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-5">
     <div class="header">
         <h3>Add New Category</h3>
     </div>

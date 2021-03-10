@@ -133,6 +133,8 @@
     .main-content {
         display: flex;
         flex-direction: row;
+        box-sizing: border-box;
+        width: 100%;
     }
     /* End Main Content */
 
@@ -140,7 +142,7 @@
     .table {
         display: flex;
         flex-direction: column;
-        width: auto;
+        box-sizing: border-box;
     }
 
     .table .header {
@@ -149,17 +151,25 @@
         width: fit-content;
     }
 
+    .table .header h3 {
+        font-size: 1rem;
+    }
+
+    .table .table-overflow {
+        overflow-x: auto;
+        margin-top: 1rem;
+    }
+
     .table table {
         display: inline-block;
         justify-content: start;
-        padding: 1rem;
         width: 100%;
     }
 
     .table table tr th,
     .table table tr td {
         text-align: start;
-        padding: 0.8rem;
+        padding: 1rem;
         font-size: 1rem;
     }
 
@@ -172,6 +182,7 @@
         text-decoration: none;
         background-color: transparent;
         border: none;
+        outline: none;
     }
 
     .table table tr td a img,
@@ -186,8 +197,8 @@
     .form {
         display: flex;
         flex-direction: column;
-        width: 100;
-        padding-top: 2rem;
+        box-sizing: border-box;
+        padding: 1rem 0 1rem 1rem;
     }
 
     .form .header {
@@ -196,41 +207,38 @@
         width: fit-content;
     }
 
+    .form .header h3 {
+        font-size: 1rem;
+    }
+
     .form form .input {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .form form .input input,
     .form form .input input:focus {
         outline: none;
         border: none;
+        box-sizing: border-box;
         height: 3.5rem;
         padding-left: 1rem;
-        width: 90%;
-        background-color: transparent;
+        width: 100%;
         font-size: 1rem;
-    }
-
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:focus,
-    input:-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0 30px white inset !important;
     }
 
     .form form .button-control {
         display: flex;
-        margin-top: 2rem;
+        margin-top: 1rem;
         width: 100%;
     }
 
     .form form .button-control button {
         background-color: white;
         border: none;
-        padding: 1.1rem;
+        padding: 0.8rem;
         background-color: black;
         color: white;
-        font-size: 1rem;
+        font-size: 0.9rem;
         width: 8rem;
         font-weight: 700;
     }
