@@ -20,7 +20,16 @@ class ProductController extends Controller
         ]);
     }
 
-    public function create()
+    public function store()
     {
+        Product::create([
+            'category_id' => request('category_id'),
+            'item_number' => request('item_number'),
+            'name' => request('name'),
+            'price' => request('price'),
+            'description' => request('name'),
+        ]);
+
+        return redirect('/product');
     }
 }

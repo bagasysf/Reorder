@@ -6,6 +6,17 @@
         font-family: "Roboto", "Sans";
     }
 
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+      
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
     /* For desktop: */
     .col-lg-1 {
         width: 8.33% !important;
@@ -157,6 +168,7 @@
 
     .table .table-overflow {
         overflow-x: auto;
+        overflow-y: auto;
         margin-top: 1rem;
     }
 

@@ -3,7 +3,7 @@
 @section('title', $title)
 
 @section('main-content')
-<div class="table col-xm-12 col-sm-12 col-md-12 col-lg-8 col-xl-7">
+<div class="table col-xm-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
     <div class="header">
         <h3>{{$title}}</h3>
     </div>
@@ -16,6 +16,7 @@
                 <th>Name</th>
                 <th>Price</th>
                 <th>Description</th>
+                <th>Custom</th>
             </tr>
             @php
             $num=0;
@@ -27,11 +28,11 @@
             @endphp
             <tr>
                 <td>{{$num}}</td>
-                <td>{{$product->$category->name}}</td>
+                <td>{{$product->category->name}}</td>
                 <td>{{$product->item_number}}</td>
                 <td>{{$product->name}}</td>
-                <td>{{$category->price}}</td>
-                <td>{{$category->description}}</td>
+                <td>{{$product->price}}</td>
+                <td>{{$product->description}}</td>
                 <td>
                     <form action="/product/{{$product->id}}" method="POST">
                         @csrf
@@ -49,7 +50,7 @@
         </table>
     </div>
 </div>
-<div class="form col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-5">
+<div class="form col-xm-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
     <div class="header">
         <h3>Add New Product</h3>
     </div>
@@ -64,6 +65,15 @@
                 <option style="height: 2rem;" value="{{$category->id}}">{{$category->name}}</option>
                 @endforeach
             </select>
+        </div>
+        <div class="input shadow">
+            <input type="text" name="item_number" placeholder="Type item number here ..">
+        </div>
+        <div class="input shadow">
+            <input type="text" name="name" placeholder="Type name here ..">
+        </div>
+        <div class="input shadow">
+            <input type="text" name="price" placeholder="Type price here ..">
         </div>
         <div class="input shadow">
             <input type="text" name="description" placeholder="Type description here ..">
