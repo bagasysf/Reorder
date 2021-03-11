@@ -1,0 +1,2 @@
+fontsize: 48px
+stroke: 2.5

@@ -57,9 +57,11 @@
         @csrf
         <div class="input select shadow">
             <select name="category_id" id="">
-                <option value="">Please Select</option>
+                <option value="">
+                    Please Select Category ..
+                </option>
                 @foreach($category as $category)
-                <option value="{{$category->id}}">{{$category->name}}</option>
+                <option style="height: 2rem;" value="{{$category->id}}">{{$category->name}}</option>
                 @endforeach
             </select>
         </div>

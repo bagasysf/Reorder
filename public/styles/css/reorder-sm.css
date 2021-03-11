@@ -177,6 +177,19 @@
         margin-top: 1rem;
     }
 
+    .form form .input select {
+        height: 3.5rem;
+        width: 100%;
+        padding-left: 1rem;
+        border: none;
+        outline: none;
+        
+        /* Replace the default sytling (arrow) */
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
     .form form .input input,
     .form form .input input:focus {
         outline: none;

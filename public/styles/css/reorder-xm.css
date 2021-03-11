@@ -177,20 +177,18 @@
         margin-top: 1rem;
     }
 
-    /* .form form .select {
-        padding-right: 1rem;
-    } */
-
+    
     .form form .input select {
         height: 3.5rem;
         width: 100%;
-        padding-left: 0.8rem;
+        padding-left: 1rem;
         border: none;
         outline: none;
-    }
-
-    .form form .input select span {
-        color: gray !important;
+        
+        /* Replace the default sytling (arrow) */
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
     }
 
     .form form .input input,
